@@ -37,6 +37,15 @@
             </h:commandButton>
         </h:form>
 
+        
+        <h1> Forward vs Redirect </h1>
+        <h:form>
+            <h:commandButton action = "hello" value = "Forward to hello"/> 
+        </h:form>
+        <h:form>
+            <h:commandButton action = "hello?faces-redirect=true" value = "Redirect to hello"/> 
+        </h:form>
+        
     </h:body>
 </html>
 
