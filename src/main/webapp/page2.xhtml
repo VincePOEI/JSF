@@ -1,19 +1,37 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html">
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui = "http://java.sun.com/jsf/facelets">
     <h:head>
         <title>Facelet Title</title>
     </h:head>
     <h:body>
+
+        <ui:composition template="/Templates/common.xhtml">
+            <ui:define name="header">
+                <h1> Page 2 header </h1>
+            </ui:define> 
+        
+            <ui:define name="content">
+                <h1> Page 2 content </h1>
+            </ui:define> 
+
+            <ui:define name="footer">
+                <h1> Page 2 footer </h1>
+            </ui:define> 
+        </ui:composition>
+        
+        
+        
         Hello from page 2 (depuis page xhtml)
 
         <h3> Aller vers home </h3>
         <h:form>
             <h:commandButton action = "home" value = "Go to home "/> 
         </h:form>
-        
-        
+
+
     </h:body>
 </html>
 
