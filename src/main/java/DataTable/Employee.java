@@ -8,6 +8,9 @@ public class Employee {
     private String department;
     private Integer age;
     private Integer salary;
+
+    public Employee() {
+    }
     
     
     public Employee(String name, String department,Integer age, Integer salary){
